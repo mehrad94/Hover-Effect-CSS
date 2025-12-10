@@ -9,8 +9,8 @@ const App = () => {
       <div className="cards flex gap-40">
         <Card 
           caseStudy="Case Study 1"
-          review="This is a review for the first card. It's a great product!"
           logoSrc="/logo.svg"
+          imageSrc="/img-1.jpg"
         />
        
       </div>
