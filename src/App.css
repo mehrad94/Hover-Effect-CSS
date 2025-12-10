@@ -146,10 +146,10 @@ header h1{
   object-fit: contain;
 }
 
-.cord:hover .card-cta {
+.card:hover .card-cta {
   transform: translateX(40px) rotateZ(7deg);
 }
 
 .card:hover .card-fg{
-  transform: rotateY('-40deg');
+  transform: rotateY(-40deg);
 }
