@@ -1,32 +1,18 @@
-import "./App.css";
+import Card from "./components/Card";
+
 const App = () => {
   return (
-    <div className="container">
-      <div className="header"></div>
-      <div className="cards">
-        <div className="card">
-          <div className="card-bg">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, labore! Sapiente at
-              enim ab ut laboriosam voluptatibus eaque, nihil quod perferendis ea, earum architecto
-              impedit commodi quo quaerat quis sunt.
-            </p>
-          </div>
-          <div className="card-cta">
-            <p>Tap to read</p>
-          </div>
-          <div className="card-fg">
-            <p className="case-study">Case Stydy</p>
-            <p className="review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni impedit placeat
-              ut perferendis soluta numquam, quos, quidem, officiis dolor saepe totam ea.
-              Repudiandae maiores soluta blanditiis assumenda ipsa? Sint!
-            </p>
-            <div className="logo">
-              <img src="/logo.svg" alt="Logo" />
-            </div>
-          </div>
-        </div>
+    <div className="w-screen h-screen font-sans flex justify-center items-center bg-[radial-gradient(circle,rgba(29,17,56,1)_0%,rgba(7,4,14,1)_100%)] flex-col gap-14">
+      <header>
+        <h1 className="text-white text-3xl font-medium text-center">My Awesome App</h1>
+      </header>
+      <div className="cards flex gap-40">
+        <Card 
+          caseStudy="Case Study 1"
+          review="This is a review for the first card. It's a great product!"
+          logoSrc="/logo.svg"
+        />
+       
       </div>
     </div>
   );
